@@ -20,6 +20,12 @@ public class RPL {
         // TODO code application logic here
         int awal, akhir, bil;
         Scanner input = new Scanner(System.in);
+        System.out.println("=========================");
+        System.out.println("Nama   : Irfan Nurhasan");
+        System.out.println("NIM    : 6306130024");
+        System.out.println("Kelas  : D3IF37-02");
+        System.out.println("Tanggal: 04-April-2015 :");
+        System.out.println("=========================");
         System.out.println("Masukkan awal :");
         awal = input.nextInt();
         System.out.println("Masukkan Akhir:");
@@ -38,7 +44,5 @@ public class RPL {
             }
             angka++;
         }
-        
     }
-    
 }
