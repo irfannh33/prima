@@ -1,0 +1,44 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package rpl;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Praktikum
+ */
+public class RPL {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int awal, akhir, bil;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Masukkan awal :");
+        awal = input.nextInt();
+        System.out.println("Masukkan Akhir:");
+        akhir = input.nextInt();
+        System.out.println("bilangan Prima " +awal +" sampai " +akhir +" adalah");
+        int angka = awal;
+        while (angka <= akhir){
+            int tmp = 0;
+            for (int bagi = 2; bagi < angka; bagi++){
+                if (angka%bagi==0){
+                    tmp=1;
+                }
+            }
+            if (tmp != 1){
+                System.out.print(angka + " ");
+            }
+            angka++;
+        }
+        
+    }
+    
+}
